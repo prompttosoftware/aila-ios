@@ -1,0 +1,67 @@
+\.DS_Store
+Thumbs.db
+
+# Android specific build artifacts and IDE files
+build/
+app/build/
+*.apk
+*.aab
+*.keystore
+.signing
+*.iml
+.idea/
+local.properties
+
+# Gradle cache and distributions
+.gradle/
+.gradle/caches/
+.gradle/daemon/
+.gradle/wrapper/dists/
+
+# iOS specific build artifacts and IDE files
+DerivedData/
+Build/
+*.xcodeproj/xcuserdata/
+*.xcuserdatad/
+xcuserdata/
+*.xcuserstate
+.build/
+
+# AI Models and Data
+# The plan specifies AI models are "pre-bundled in app assets" (Android) and "Resources" (iOS).
+# Therefore, these asset/resource folders themselves are NOT ignored by this gitignore,
+# assuming they contain the checked-in source models.
+# If any large local development models are generated OR stored OUTSIDE of these
+# bundled locations, add them here. E.g.:
+# local_models/
+# *.tflite
+# *.mlmodel
+
+# Workspace runtime database files (e.g., SQLite, CoreData .storefile) are typically
+# generated off-repo in app-specific data directories. If any of these are
+# accidentally committed for debugging, ignore common database file extensions:
+# *.sqlite
+# *.sqlite3
+# *.storedata
+# *.coredata
+
+# Log files
+*.log
+log/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Security and sensitive configuration files
+.env
+.env.*
+env.local
+debug.keystore
+secrets.yml
+credentials.json
+
+# Editor specific temporary files
+*.swp
+*.swo
+*~
